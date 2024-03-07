@@ -1,0 +1,10 @@
+@use "../../../styles/" as variables;
+
+.home {
+    display: grid;
+
+    &_container {
+        display: grid;
+    }
+
+}

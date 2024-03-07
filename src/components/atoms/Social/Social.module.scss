@@ -1,0 +1,28 @@
+@use "../../../styles/" as variables;
+
+.social {
+  padding: 5px;
+  border-radius: 50%;
+  border: 3px solid var(--color-title);
+  transition: all 0.3s ease-in-out;
+
+  &:hover,
+  &:active {
+    border-color: var(--color-secondary) !important;
+    transform: translateY(-5px);
+    &>a>i {
+      color: var(--color-secondary) !important;
+    }
+  }
+
+  &_link {
+    text-decoration: none;
+    font-size: 40px;
+    cursor: pointer;
+
+    &>i {
+      color: var(--color-title) !important;
+      transition: color 0.3s ease-in-out;
+    }
+  }
+}
