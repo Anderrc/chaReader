@@ -49,7 +49,7 @@ const HomePage = () => {
 
     return (
         <div className={style.home}>
-            <h1>Texto a voz en línea</h1>
+            <h2>Texto a voz en línea</h2>
             <p>Convierte cualquier texto a voz en línea. ¡Es gratis!</p>
             <div className={style.home_container}>
                 <div className={style.controls}>
@@ -77,8 +77,6 @@ const HomePage = () => {
                                 };
                             })}
                             onChange={(e: any) => {
-                                console.log('💩 ~ HomePage ~ e:', e);
-
                                 setSelectedVoice(e.target.value);
                             }}
                             value={selectedVoice}
@@ -96,6 +94,7 @@ const HomePage = () => {
                         value={text}
                         className={style.textarea}
                         onChange={(e) => setText(e.target.value)}
+                        spellCheck="false"
                     />
                 </label>
             </div>

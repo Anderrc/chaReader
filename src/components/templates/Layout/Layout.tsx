@@ -1,11 +1,8 @@
 'use client';
-import useThemeDetector from 'components/hooks/useThemeDetector';
-import Image from 'next/image';
-import React, { useEffect, useState } from 'react';
-import logo from '../../../assets/logo.svg';
-import logoBlack from '../../../assets/logoBlack.svg';
-import style from './Layout.module.scss';
 import SwitchMode from 'components/components/atoms/SwitchMode/SwitchMode';
+import useThemeDetector from 'components/hooks/useThemeDetector';
+import React, { useEffect, useState } from 'react';
+import style from './Layout.module.scss';
 
 function Layout({
     children
@@ -21,16 +18,12 @@ function Layout({
         setIsDarkMode(theme);
     }, []);
 
-    return (    
+    return (
         <div
             className={`${style.container} theme ${isDarkMode ? 'theme-dark' : 'theme-light'}`}
         >
             <header className={style.header}>
-                <Image
-                    src={isDarkMode ? logo : logoBlack}
-                    alt="Logo"
-                    className={style.header_logo}
-                />
+                <h1 className={style.header_logo}>ChaReader</h1>
                 <div className={style.header_navbar}>
                     <div className={style.header_navbar_actions}>
                         <SwitchMode

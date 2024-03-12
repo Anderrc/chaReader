@@ -8,7 +8,6 @@ export const metadata: Metadata = {
 };
 
 const HeadPage = () => {
-    // const { title } = props;
     return (
         <Head>
             <link rel="icon" href="/favicon.ico" />

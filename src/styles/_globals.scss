@@ -186,8 +186,14 @@ b {
 }
 
 .theme {
+	--color-with: #f7f9f9;
+	--color-gray: #f0f0f0;
+	--color-dark: #0f0f0f;
 	background-color: var(--color-bg);
 }
+
+
+
 
 @media (prefers-color-scheme: dark) {
 
@@ -200,7 +206,7 @@ b {
 		/* Dark blue for titles */
 		--color-text: #6c757d;
 
-		--color-text-negative: #938a83 ;
+		--color-text-negative: #938a83;
 		/* Mid-gray for text */
 		--color-primary: #f0932b;
 		/* Orange for primary elements */
@@ -222,7 +228,7 @@ b {
 		/* Light grayish background for titles */
 		--color-text: #f0f0f0;
 
-		--color-text-negative: #0f0f0f ;
+		--color-text-negative: #0f0f0f;
 		/* Light gray for text */
 		--color-primary: #29aafe;
 		/* Sky blue for primary elements */

@@ -4,47 +4,30 @@ import { Metadata } from 'next';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
-    title: 'Anderson Castaño | Portfolio',
-    description: 'Archetype nextjs',
+    title: 'chaReader: convierte texto a audio',
+    description:
+        'Convierte tu texto en audio con chaReader. ¡Escucha tus ebooks, artículos y documentos mientras haces otras cosas!',
     openGraph: {
-        title: 'Anderson Castaño | Archetype',
-        description: 'Archetype ',
+        title: 'chaReader: convierte texto a audio',
+        description:
+            'Convierte tu texto en audio con chaReader. ¡Escucha tus ebooks, artículos y documentos mientras haces otras cosas! ',
         images: '/imgPortada.jpeg'
     }
 };
 export default function Home() {
     const jsonLd = {
         '@context': 'http://schema.org',
-        '@type': 'CreativeWork',
-        name: 'Portafolio de Anderson Castaño',
-        description:
-            'Este es mi portafolio donde muestro mi experiencia y algunos de mis trabajos',
-        url: 'https://anderc-dev.vercel.app/',
-        author: {
-            '@type': 'Person',
-            name: 'Anderson Castaño'
-        },
-        keywords: [
-            'Frontend Developer',
-            'Desarrollador Web',
-            'React Developer',
-            'Next.js Developer',
-            'HTML5',
-            'CSS3',
-            'JavaScript (JS)',
-            'TypeScript (TS)',
-            'Java',
-            'Desarrollo Web Responsivo',
-            'Interfaz de Usuario (UI)',
-            'Experiencia de Usuario (UX)',
-            'Diseño Web',
-            'Desarrollo Ágil',
-            'Git',
-            'Control de Versiones',
-            'Proyectos de React',
-            'Proyectos de Next.js',
-            'Portafolio de Desarrollo Web',
-            'Desarrollo Frontend Moderno'
+        '@type': 'SoftwareApplication',
+        name: 'chaReader',
+        description: 'Convierte texto a audio',
+        image: 'https://stock.adobe.com/es/search?k=charreria',
+        url: 'https://dereader.ca/',
+        function: [
+            {
+                function: 'Convertir texto a audio',
+                input: 'Texto',
+                output: 'Audio'
+            }
         ]
     };
 

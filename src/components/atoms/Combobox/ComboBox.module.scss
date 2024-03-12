@@ -17,7 +17,7 @@
     border-radius: 4px;
     cursor: pointer;
     box-shadow: var(--color-shadow) 0px 2px 8px 0px;
-    background: var(--color-text);
+    background-color: var(--color-with);
     border: none;
     @extend %text;
     font-size: large;
@@ -29,7 +29,7 @@
     left: 0;
     width: 100%;
     z-index: 1;
-    background-color: var(--color-text);
+    background-color: var(--color-with);
     border-radius: 4px;
     list-style: none;
     padding: 10px;
@@ -43,11 +43,11 @@
 .combobox ul li {
     padding: 5px;
     cursor: pointer;
-    color: var(--color-text-negative);
+    color: var(--color-dark);
 }
 
 .combobox ul li:hover {
-    background-color: var(--color-title);
+    background-color: var(--color-gray);
 }
 
 .combobox input:focus+ul {
