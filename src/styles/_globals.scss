@@ -84,6 +84,7 @@ summary,
 time,
 mark,
 audio,
+textarea,
 video {
 	margin: 0;
 	padding: 0;
@@ -94,6 +95,7 @@ video {
 	box-sizing: border-box;
 	color: var(--color-text);
 	@extend %text;
+	// @extend %scrollbar;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -172,6 +174,8 @@ h6 {
 	font-weight: 500 !important;
 }
 
+
+
 p,
 span {
 	@extend %body-text;
@@ -188,27 +192,47 @@ b {
 @media (prefers-color-scheme: dark) {
 
 	.theme-light {
-		--color-bg: #ffffff;
-		--color-bg-secondary: rgba(247, 247, 247, 1);
-		--color-title: #455A64;
-		--color-text: #222222;
-		--color-primary: #1976D2;
-		--color-secondary: #4CAF50;
+		--color-bg: #f7f9f9;
+		/* Light grayish background */
+		--color-bg-secondary: rgba(255, 255, 255, 0.3);
+		/* White with 30% opacity */
+		--color-title: #2c3e50;
+		/* Dark blue for titles */
+		--color-text: #6c757d;
 
-		--color-shadow: rgba(99, 99, 99, 0.2);
+		--color-text-negative: #938a83 ;
+		/* Mid-gray for text */
+		--color-primary: #f0932b;
+		/* Orange for primary elements */
+		--color-secondary: #29aafe;
+		/* Sky blue for secondary elements */
+
+		--color-shadow: rgba(0, 0, 0, 0.1);
+		/* Light shadow */
 		--color-shadow-text: rgba(255, 255, 255, 0.8);
+		/* White text shadow */
 	}
 
 	.theme-dark {
-		--color-bg: #222222;
-		--color-bg-secondary: rgba(247, 247, 247, 0.1);
-		--color-text: #dee4e7;
-		--color-title: #ffffff;
-		--color-primary: #00BCD4;
-		--color-secondary: #4CAF50;
+		--color-bg: #343a40;
+		/* Dark grayish blue background */
+		--color-bg-secondary: rgba(0, 0, 0, 0.3);
+		/* Black with 30% opacity */
+		--color-title: #f7f9f9;
+		/* Light grayish background for titles */
+		--color-text: #f0f0f0;
+
+		--color-text-negative: #0f0f0f ;
+		/* Light gray for text */
+		--color-primary: #29aafe;
+		/* Sky blue for primary elements */
+		--color-secondary: #f0932b;
+		/* Orange for secondary elements */
 
 		--color-shadow: rgba(255, 255, 255, 0.2);
-		--color-shadow-text: rgba(0, 0, 0,.7);
+		/* Light shadow */
+		--color-shadow-text: rgba(0, 0, 0, 0.8);
+		/* Black text shadow */
 	}
 
 }
