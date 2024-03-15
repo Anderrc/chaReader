@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import Layout from 'components/components/templates/Layout/Layout';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
@@ -30,6 +31,7 @@ export default function RootLayout({
             </head>
             <body className={`${inter.className}`}>
                 <Layout>{children}</Layout>
+                <Analytics />
             </body>
         </html>
     );
